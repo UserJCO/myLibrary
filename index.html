@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sp">
+  <link rel="stylesheet" href="style.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style src="style.css"></style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="encabezado" id="encabezado" >
+      <h1>MIS LIBROS</h1>
+      <button class="btn" type="button" id="btnAgregar">Agregar Libro</button>
+    </div>
+    
+    <div class="fichas" id="fichaDeEntrada">
+      <table>
+        <tr>
+          <td><label for="title">Titulo:</label></td>
+          <td><input type="text" name="titulo" id="title" autocomplete="off" placeholder="Titulo de la obra"/></td>
+        </tr>
+        <tr>
+          <td><label for="author">Autor o Autores:</label></td>
+          <td><input type="text" name="autor" id="author" autocomplete="off"placeholder="autor o autores"/></td>
+        </tr>
+        <tr>
+          <td><label for="pages">Cantidad de paginas:</label></td>
+          <td><input type="number" name="paginas" id="pages" autocomplete="off" placeholder="numero de paginas"/></td>
+        </tr>
+        <tr>
+          <td><label for="reading">Leido?</label></td>
+          <td><input type="checkbox" name="leido" id="reading" autocomplete="off"/></td>
+        </tr>
+        <tr>
+          <td colspan="2"><button class="btn" type="button" id="btnAceptar">Aceptar</button> <button class="btn" type="button" id="btnAtras">Ocultar</button></td>
+        </tr>
+      </table>
+     </div>
+    
+    <div class="listadoDeLibros">
+      <ul id="ulBook"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
